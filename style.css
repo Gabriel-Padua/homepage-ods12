@@ -1,0 +1,106 @@
+:root {
+  --accent: #0b8457;
+  --muted: #6b7280;
+  --bg: #f7faf9;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #086f4a, #0b8457);
+  color: #fff;
+  padding: 2.5rem 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+p.lead {
+  margin: 0;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteudo */
+main {
+  padding: 2rem 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.small {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/*  Mapa */
+.map {
+  height: 200px;
+  background: linear-gradient(180deg, #e9f5ef, #f3fff7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Rodape */
+footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
