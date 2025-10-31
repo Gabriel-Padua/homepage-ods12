@@ -162,6 +162,11 @@ footer {
   font-size: 1rem;
 }
 
-a:hover {
+#materiais a:hover {
+  background-color: #0e9f63;
+  color: #074435;
+}
+#referencias a:hover {
   color: #0b8457;
 }
+
